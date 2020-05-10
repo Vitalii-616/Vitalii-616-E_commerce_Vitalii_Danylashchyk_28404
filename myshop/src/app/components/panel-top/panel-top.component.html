@@ -1,0 +1,10 @@
+<div>
+    <div style="display: flex;flex-direction: row;">
+        <img src="https://cdn-learn.adafruit.com/assets/assets/000/012/878/thumb100/led_strips_doge.bmp?1386611464" alt="">
+        <h2>Sklep z softłerem</h2>
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <input type="text" [(ngModel)]="this.mainService.productsRequest.name">
+        <button (click)="this.mainService.getProducts(this.mainService.productsRequest)" routerLink="/products">Szukaj Produktu</button>
+    </div>
+</div>
